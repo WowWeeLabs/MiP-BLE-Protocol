@@ -39,7 +39,7 @@ Receiving commands on the other hand need some special treatment before they can
 // Get ASCII command value from incoming data
 NSString *ascii = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 
-// Here we can either do a string search & split OR to make it easier we want to split the string up into a byte by byte array
+// Here we simply split the string array for every 2 characters
 NSMutableArray *theDataArray = [NSMutableArray array];
 for (int i = 0; i < [asciiHex length]; i=i+2) {
   NSString *cmd = [asciiHex substringWithRange:NSMakeRange(i, 2)];
@@ -58,7 +58,10 @@ NSLog(@"Contains %lu extra data bytes: %@", length, theDataArray);
 Note that this is just an example, you can use any language to processes commands if you follow these steps:
 
 1. Convert the incoming string to ASCII
-2. Process the ASCII string and split it off into one or more HEX values
+2. Process the ASCII string and split it off every 2 characters, every two characters is a single incoming hex byte
+3. Convert each string set of hex characters into a integer value
+
+Process incoming integer values as you would normally based on the command protocol document.
 
 **Controlling MiP**
 
