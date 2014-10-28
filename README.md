@@ -28,12 +28,38 @@ Bluetooth Low Energy is made up of a series of Services & Characteristics. In th
   - Send Data WRITE Characteristic: 0xFFE5
   
 Using your Bluetooth Framework of choice you can choose to run a callback everytime you receive data using the Receive Data NOTIFY Characteristic.
-  
+
+_**IMPORTANT**_
+
+Sending command bytes is very easy, just send a raw byte according to the value in the table.
+
+Receiving commands on the other hand need some special treatment before they can be processed as raw command bytes. All commands come in an ASCII encoded string. For example, in Objective-C you might do the following:
+
+```objective-c
+// Get ASCII command value from incoming data
+NSString *ascii = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+
+// Here we can either do a string search & split OR to make it easier we want to split the string up into a byte by byte array
+NSMutableArray *theDataArray = [NSMutableArray array];
+for (int i = 0; i < [asciiHex length]; i=i+2) {
+  NSString *cmd = [asciiHex substringWithRange:NSMakeRange(i, 2)];
+  [theDataArray addObject:@([cmd hexFromString])];
+}
+
+NSUInteger cmdByte = [theDataArray[0] unsignedIntegerValue];
+[theDataArray removeObjectAtIndex:0];
+NSUInteger length = [theDataArray count];
+
+// Using the above code we can get the command
+NSLog(@"The command is: %lu", cmdByte);
+NSLog(@"Contains %lu extra data bytes: %@", length, theDataArray);
+```
+
+Note that this is just an example, you can use any language to processes commands if you follow these steps:
+
+1. Convert the incoming string to ASCII
+2. Process the ASCII string and split it off into one or more HEX values
+
 **Controlling MiP**
 
 All of the available control commands are located in [the command document](MiP-Protocol.md)
-
-License
------------------------------------------------
-
-You are free to use this protocol document to release your own apps which can control MiP.
