@@ -1,5 +1,6 @@
 WowWee MiP Bluetooth Low Energy Protocol
 ===============
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/WowWeeLabs/MiP-BLE-Protocol?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![](Images/MiP.png)
 
