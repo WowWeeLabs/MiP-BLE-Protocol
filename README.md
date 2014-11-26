@@ -26,7 +26,7 @@ Bluetooth Low Energy is made up of a series of Services & Characteristics. In th
 - Receive Data Service: 0xFFE0
   - Receive Data NOTIFY Characteristic: 0xFFE4
 - Send Data Service: 0xFFE5
-  - Send Data WRITE Characteristic: 0xFFE5
+  - Send Data WRITE Characteristic: 0xFFE9
   
 Using your Bluetooth Framework of choice you can choose to run a callback everytime you receive data using the Receive Data NOTIFY Characteristic.
 
