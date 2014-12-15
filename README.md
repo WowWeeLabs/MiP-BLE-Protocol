@@ -67,3 +67,11 @@ Process incoming integer values as you would normally based on the command proto
 **Controlling MiP**
 
 All of the available control commands are located in [the command document](MiP-Protocol.md)
+
+**Exciting Projects**
+
+We always love to share great projects that are built off of our libraries, so far here are the ones we know about:
+
+* [Cyon-MiP](https://github.com/hybridgroup/cylon-mip) - A NodeJS library for controlling MiP
+
+If you've developed your own library or project please send us a pull request!
