@@ -15,11 +15,37 @@ How to use it
 
 **Finding a MiP before Connecting**
 
+When scanning for MiPs you can use the Broadcast Data to get some basic info about MiP (such as his name) and to determine whether it's a MiP or another WowWee toy.
+
+Here is a typical snapshot of broadcast data returned by scanning for MiPs (on iOS), yours may look slightly different but it should still have similar values:
+
+```
+   kCBAdvDataIsConnectable = 1;
+   kCBAdvDataManufacturerData = <00050100 00000000 00000000 00000000 0000>;
+   kCBAdvDataServiceUUIDs =     (
+    "Unknown (<fff0>)",
+    "Unknown (<ffb0>)"
+   );
+```
+
+- kCBAdvDataManufacturerData = 000501000000000000000000000000000000
+
 To know the difference between MiP and other BLE based products you can check the *Manufactorer Specific Data* which is sent as part of the advertising Packet. Check with your BLE framework on how to get this.
 
 Each WowWee BLE product assigns a special 16bit ID in the first two bytes of the Manufactorer specific data. If you are using one of our prebuilt SDKs this is handled automatically for you.
 
+Taking the first 4 digits gives us a product ID of 5, all MiPs are assigned 5 as a product ID.
+
+- kCBAdvDataServiceUUIDs 
+
+Please ignore these values, the only way to find the available services is by connecting to a MiP and scanning for services
+
+
 **Connecing to a MiP**
+
+Please see your BLE framework for instructions on how to connect to a BLE device. Usually the framework will give you an object and a connect command. Your code should handle mundane tasks such as reconnecting, or handling a failed connection.
+
+**Controlling MiP**
 
 Bluetooth Low Energy is made up of a series of Services & Characteristics. In the case of MiP these are proprietary which means you need to find them by UUID. The following important services are available:
 
@@ -31,6 +57,8 @@ Bluetooth Low Energy is made up of a series of Services & Characteristics. In th
 Using your Bluetooth Framework of choice you can choose to run a callback everytime you receive data using the Receive Data NOTIFY Characteristic.
 
 _**IMPORTANT**_
+
+Please note that you can only find the above services once your connected to MiP. They will not show up in the broadcast data.
 
 Sending command bytes is very easy, just send a raw byte according to the value in the table.
 
@@ -63,8 +91,6 @@ Note that this is just an example, you can use any language to processes command
 3. Convert each string set of hex characters into a integer value
 
 Process incoming integer values as you would normally based on the command protocol document.
-
-**Controlling MiP**
 
 All of the available control commands are located in [the command document](MiP-Protocol.md)
 
