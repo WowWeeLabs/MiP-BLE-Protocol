@@ -94,6 +94,10 @@ Process incoming integer values as you would normally based on the command proto
 
 All of the available control commands are located in [the command document](MiP-Protocol.md)
 
+**Using MiP via the onboard UART port**
+
+MiP contains a UART serial port which can receive the same commands as the Bluetooth Low Energy receiver. After you connect to the TX & RX pins on the PCB you need to send the byte 0xFF, once this is sent you can send the commands as per the BLE documentation.
+
 **Exciting Projects**
 
 We always love to share great projects that are built off of our libraries, so far here are the ones we know about:
