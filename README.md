@@ -108,5 +108,6 @@ We always love to share great projects that are built off of our libraries, so f
 * [Python Linux MiP](https://github.com/vlimit/mip) - Control MiP via BLE from Python running Linux
 * [Easy rechargeable MIP hack](https://hackaday.io/project/3316-putting-lipos-into-your-mip-robot) - Instructions for adding rechargable batteries to MiP
 * [Hacking MiP by Sparkfun](https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back) - Great blog post with step by step instructions on how to connect a UART serial port to MiP
+* [Raspberry Pi MiP](https://github.com/rjelbert/mip_robot/wiki) - Working with MiP using a Raspberry Pi
 
 If you've developed your own library or project please send us a pull request!
