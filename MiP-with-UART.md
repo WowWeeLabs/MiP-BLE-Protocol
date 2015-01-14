@@ -13,7 +13,7 @@ To connect to MiP you need to use these settings:
 
 **Python Example**
 
-Thanks to @rjelbert for the sample code.
+Thanks to [rjelbert](https://github.com/rjelbert) for the sample code.
 
 ```python
 
@@ -54,7 +54,7 @@ ser.flush()
 
 **Arduino Example**
 
-Thanks to @timab25 here is some sample code for Arduino Mega that uses Serial1 to init, make chest blink green, then sleep.
+Thanks to [timab25](https://github.com/timab25) here is some sample code for Arduino Mega that uses Serial1 to init, make chest blink green, then sleep.
 
 *Note:* The delay after sending the init is needed.
 
