@@ -10,6 +10,8 @@ Pre-built SDKs are available for iOS: https://github.com/WowWeeLabs/MiP-iOS-SDK
 
 For information on WowWee products visit: http://www.wowwee.com/.
 
+For your reference, due to a number of issues with some models of phones and BLE we've posted a quick [compatibility guide](http://www.wowwee.com/mip/compatibility) that's worth checking out. It's not a complete list, but just provides a reference of what phones are roughly going to work with Bluetooth Low Energy.
+
 How to use it
 -----------------------------------------------
 
