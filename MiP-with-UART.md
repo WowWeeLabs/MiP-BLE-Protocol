@@ -5,7 +5,7 @@ MiP contains a UART serial port which can receive the same commands as the Bluet
 
 **Connecting to the Serial Port**
 
-(Sparkfun have done a fantastic writeup)[https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back] on how to connect to the serial port on MiP (and adding their proto board). This is the recommended guide for opening up MiP.
+[Sparkfun have done a fantastic writeup](https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back) on how to connect to the serial port on MiP (and adding their proto board). This is the recommended guide for opening up MiP.
 
 To connect to MiP you need to use these settings:
 
@@ -85,3 +85,7 @@ delay(30000);
 Serial1.write(0xFA);
 
 ```
+
+**Other Languages**
+
+Please send us a pull request with any other language examples you have.
