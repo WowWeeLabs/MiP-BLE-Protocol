@@ -3,7 +3,7 @@ Using MiP from UART
 
 MiP contains a UART serial port which can receive the same commands as the Bluetooth Low Energy receiver. After you connect to the TX & RX pins on the PCB you need to send the byte 0xFF, once this is sent you can send the commands as per the BLE documentation.
 
-** Connecting to the Serial Port **
+**Connecting to the Serial Port**
 
 (Sparkfun have done a fantastic writeup)[https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back] on how to connect to the serial port on MiP (and adding their proto board). This is the recommended guide for opening up MiP.
 
