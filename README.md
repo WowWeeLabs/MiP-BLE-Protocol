@@ -110,5 +110,6 @@ We always love to share great projects that are built off of our libraries, so f
 * [Hacking MiP by Sparkfun](https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back) - Great blog post with step by step instructions on how to connect via UART
 * [Raspberry Pi MiP](https://github.com/rjelbert/mip_robot/wiki) - Working with MiP using a Raspberry Pi
 * [EZ-Builder with MiP](http://www.ez-robot.com/Tutorials/Help.aspx?id=204) - [EZ-Builder](http://www.ez-robot.com) software can officially control MiP
+* [MiP with OSX](https://github.com/charcole/MiP-OSX) - Basic example of how to use MiP from OSX
 
 If you've developed your own library or project please send us a pull request!
