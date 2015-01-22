@@ -96,6 +96,23 @@ Process incoming integer values as you would normally based on the command proto
 
 All of the available control commands are located in [the command document](MiP-Protocol.md)
 
+**Example of Receiving Data from MiP**
+
+Receiving data and interpreting can be a bit confusing, but just take it step by step. Here's an example sending command 0x14 which is getting the firmware version.
+
+1. Send 0x14 to the robot
+2. Receive 0x31,0x34,0x30,0x45,0x30,0x32,0x31,0x42,0x30,0x37 raw bytes from the robot
+3. Convert them to ASCII, for this example I just use [a simple website](http://www.rapidtables.com/convert/number/hex-to-ascii.htm). This gets the result **140E021B07**
+4. Here is a string you can now use to interpret the command:
+
+* 14 = Command 0x14 you sent, it's echoed back, just lets you know which data this command is for
+* 0E = Year 14 (when converted to decimal)
+* 02 = Month 02 (when converted to decimal)
+* 1B = Day 27 (when converted to decimal)
+* 07 = Number 7 (when converted to decimal) for the revision on this day
+
+Remember that this is a **String** so if you want to treat them as numbers, you will need to convert hex string OE into an int. Most languages have this as a built in core function.
+
 **Using MiP via the onboard UART port**
 
 We have created a [seperate document with information and code samples](MiP-with-UART.md) for controlling MiP via the onboard serial port.
