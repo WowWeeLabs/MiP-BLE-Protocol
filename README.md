@@ -22,7 +22,6 @@ When scanning for MiPs you can use the Broadcast Data to get some basic info abo
 Here is a typical snapshot of broadcast data returned by scanning for MiPs (on iOS), yours may look slightly different but it should still have similar values:
 
 ```
-   kCBAdvDataIsConnectable = 1;
    kCBAdvDataManufacturerData = <00050100 00000000 00000000 00000000 0000>;
    kCBAdvDataServiceUUIDs =     (
     "Unknown (<fff0>)",
@@ -100,7 +99,7 @@ All of the available control commands are located in [the command document](MiP-
 
 Receiving data and interpreting can be a bit confusing, but just take it step by step. Here's an example sending command 0x14 which is getting the firmware version.
 
-1. Send 0x14 to the robot
+1. Send 0x14 to the robot as raw hex (don't do any conversion)
 2. Receive 0x31,0x34,0x30,0x45,0x30,0x32,0x31,0x42,0x30,0x37 raw bytes from the robot
 3. Convert them to ASCII, for this example I just use [a simple website](http://www.rapidtables.com/convert/number/hex-to-ascii.htm). This gets the result **140E021B07**
 4. Here is a string you can now use to interpret the command:
@@ -111,7 +110,7 @@ Receiving data and interpreting can be a bit confusing, but just take it step by
 * 1B = Day 27 (when converted to decimal)
 * 07 = Number 7 (when converted to decimal) for the revision on this day
 
-Remember that this is a **String** so if you want to treat them as numbers, you will need to convert hex string OE into an int. Most languages have this as a built in core function.
+Remember that this is a **String** so if you want to treat them as Integers, you will need to convert the hex into an integer. Most languages have this as a built in core function.
 
 **Using MiP via the onboard UART port**
 
