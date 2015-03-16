@@ -120,6 +120,7 @@ We have created a [seperate document with information and code samples](MiP-with
 
 We always love to share great projects that are built off of our libraries, so far here are the ones we know about:
 
+* [libmip](https://code.google.com/p/ramey/source/browse/#svn%2Ftrunk%2Fmip) - A C library for controlling MiP, you can see a [demo video with joystick control here](https://www.youtube.com/watch?v=8p5-vwIeQ2g)
 * [Cyon-MiP](https://github.com/hybridgroup/cylon-mip) - A NodeJS library for controlling MiP
 * [Python Linux MiP](https://github.com/vlimit/mip) - Control MiP via BLE from Python running Linux
 * [Easy rechargeable MIP hack](https://hackaday.io/project/3316-putting-lipos-into-your-mip-robot) - Instructions for adding rechargable batteries to MiP
