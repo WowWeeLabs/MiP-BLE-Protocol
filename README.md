@@ -6,7 +6,7 @@ WowWee MiP Bluetooth Low Energy Protocol
 
 The free MiP BLE protocol lets you send and receive commands to and from your [MiP robot](http://www.meetmip.com). You will need to write your own control code in the language of your choice using an appropriate Bluetooth Low Energy library.
 
-Pre-built SDKs are available for iOS: https://github.com/WowWeeLabs/MiP-iOS-SDK
+Pre-built official SDKs are available for [iOS](https://github.com/WowWeeLabs/MiP-iOS-SDK) and also [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK).
 
 For information on WowWee products visit: http://www.wowwee.com/.
 
@@ -120,7 +120,7 @@ We have created a [seperate document with information and code samples](MiP-with
 
 We always love to share great projects that are built off of our libraries, so far here are the ones we know about:
 
-* [libmip](https://code.google.com/p/ramey/source/browse/#svn%2Ftrunk%2Fmip) - A C library for controlling MiP, you can see a [demo video with joystick control here](https://www.youtube.com/watch?v=8p5-vwIeQ2g)
+* [libmip](https://github.com/arnaud-ramey/libmip) - A C library for controlling MiP, you can see a [demo video with joystick control here](https://www.youtube.com/watch?v=8p5-vwIeQ2g)
 * [Cyon-MiP](https://github.com/hybridgroup/cylon-mip) - A NodeJS library for controlling MiP
 * [Python Linux MiP](https://github.com/vlimit/mip) - Control MiP via BLE from Python running Linux
 * [Easy rechargeable MIP hack](https://hackaday.io/project/3316-putting-lipos-into-your-mip-robot) - Instructions for adding rechargable batteries to MiP
