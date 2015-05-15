@@ -130,5 +130,6 @@ We always love to share great projects that are built off of our libraries, so f
 * [EZ-Builder with MiP](http://www.ez-robot.com/Tutorials/Help.aspx?id=204) - [EZ-Builder](http://www.ez-robot.com) software can officially control MiP
 * [MiP with OSX](https://github.com/charcole/MiP-OSX) - Basic example of how to use MiP from OSX
 * [MiP C API](https://github.com/adamgreen/MiP-Capi#readme) - Console application development for OS X
+* [MiP hacking](https://github.com/adamgreen/MiP) - @adamgreen has written documented his efforts in developing the above API, it provies for some interesting reading
 
 If you've developed your own library or project please send us a pull request!
