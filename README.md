@@ -121,12 +121,12 @@ We have created a [separate document with information and code samples](MiP-with
 We always love to share great projects that are built off of our libraries, so far here are the ones we know about:
 
 * [SparkFun MiP Board Tutorial](https://www.youtube.com/watch?v=QtfJmvjD1gA) - An awesome video showing how to attach the SparkFun MiP Arduino board... also includes a version of MiP with a flamethrower ;)
+* [Hacking MiP by Sparkfun](https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back) - Great blog post with step by step instructions on how to connect via UART
 * [SparkFun MiP Arduino SDK](https://github.com/sparkfun/SparkFun_MiP_Arduino_Library) - A work in progress library by sparkfun to control MiP over UART using an Arduino.
 * [libmip](https://github.com/arnaud-ramey/libmip) - A C library for controlling MiP, you can see a [demo video with joystick control here](https://www.youtube.com/watch?v=8p5-vwIeQ2g)
 * [Cyon-MiP](https://github.com/hybridgroup/cylon-mip) - A NodeJS library for controlling MiP
 * [Python Linux MiP](https://github.com/vlimit/mip) - Control MiP via BLE from Python running Linux
 * [Easy rechargeable MIP hack](https://hackaday.io/project/3316-putting-lipos-into-your-mip-robot) - Instructions for adding rechargeable batteries to MiP
-* [Hacking MiP by Sparkfun](https://learn.sparkfun.com/tutorials/hacking-the-mip---proto-back) - Great blog post with step by step instructions on how to connect via UART
 * [Raspberry Pi MiP](https://github.com/rjelbert/mip_robot/wiki) - Working with MiP using a Raspberry Pi
 * [EZ-Builder with MiP](http://www.ez-robot.com/Tutorials/Help.aspx?id=204) - [EZ-Builder](http://www.ez-robot.com) software can officially control MiP
 * [MiP with OSX](https://github.com/charcole/MiP-OSX) - Basic example of how to use MiP from OSX
