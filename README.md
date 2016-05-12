@@ -6,7 +6,7 @@ WowWee MiP Bluetooth Low Energy Protocol
 
 The free MiP BLE protocol lets you send and receive commands to and from your [MiP robot](http://www.meetmip.com). You will need to write your own control code in the language of your choice using an appropriate Bluetooth Low Energy library.
 
-Pre-built official SDKs are available for [iOS](https://github.com/WowWeeLabs/MiP-iOS-SDK) and also [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK).
+Pre-built official SDKs are available for [iOS](https://github.com/WowWeeLabs/MiP-iOS-SDK) , [Android](https://github.com/WowWeeLabs/MiP-Android-SDK), [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK), [Windows](https://github.com/WowWeeLabs/MiP-Windows-SDK.git) and [JavaScript (Node.js)](https://github.com/WowWeeLabs/MiP-Node.js-SDK.git).
 
 For information on WowWee products visit: http://www.wowwee.com/.
 
