@@ -133,5 +133,6 @@ We always love to share great projects that are built off of our libraries, so f
 * [MiP C API](https://github.com/adamgreen/MiP-Capi#readme) - Console application development for OS X
 * [MiP hacking](https://github.com/adamgreen/MiP) - [adamgreen](https://github.com/adamgreen) has written documented his efforts in developing the above API, it provies for some interesting reading
 * [MiP Windows SDK](https://mipwinrtsdk.codeplex.com) - Windows SDK for controlling the MiP robot.
+* [Ruby Linux MiP](https://github.com/tramuntanal/ruby-wowwee-mip) - Ruby library to control your MiP from Ruby in Linux.
 
 If you've developed your own library or project please send us a pull request!
