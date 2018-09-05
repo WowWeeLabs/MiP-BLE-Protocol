@@ -9,7 +9,7 @@ MiP contains a UART serial port which can receive the same commands as the Bluet
 
 To connect to MiP you need to use these settings:
 
-* Baud Rate: 115200
+* Baud Rate: 115200 (9600 for newer MiP robots)
 * Flow Control: Off
 * Data Bits: 8
 * Parity Bit: None
